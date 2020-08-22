@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Ferra Taga</string>
+    <string name="error_message">Enter correct number</string>
+    <string name="successTitle">Successful</string>
+    <string name="warningTitle">Warning</string>
+    <string name="errorTitle">Error</string>
+    <string name="register_success_message">Registration successfuly</string>
+    <string name="register_warning_message">Fill out all the field</string>
+    <string name="add_participant">Add participant</string>
+    <string name="add_news_feed">Add News Feed</string>
+    <string name="change_rule">Change rule</string>
+    <string name="enable_vote">Enable vote</string>
+    <string name="send_notification">Send notification</string>
+    <string name="enter_participant_name">Enter participant name</string>
+    <string name="enter_participant_category">Enter participant category</string>
+    <string name="enter_participant_description">Enter participant description</string>
+    <string name="enter_participant_id">Enter participant ID</string>
+    <string name="enter_news_feed">Enter news feed</string>
+    <string name="enter_news_feed_id">Enter news feed ID</string>
+    <string name="enter_news_feed_description">Enter news feed description</string>
+    <string name="send">Send</string>
+    <string name="enter_notification_title">Enter notification title</string>
+    <string name="enter_notification_description">Enter notification description</string>
+    <string name="enter_user_number">Enter user number</string>
+    <string name="enter_user_type">Enter user type</string>
+    <string name="update">Update</string>
+    <string name="fill_allField">Fill all field</string>
+    <string name="press_the_card_to_get_qr_code">Press the card to get QR code</string>
+    <string name="SignOut">Sign out</string>
+    <string name="enterNewsFeed_ID">Enter news feed ID</string>
+    <string name="profile">Profile</string>
+    <string name="you_already_rigesterd">You are already rigstered</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_address">Enter your address</string>
+    <string name="enter_your_phone">Enter your phone</string>
+    <string name="please_fill_information">Please fill information</string>
+    <string name="register">Register</string>
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string name="please_enter_your_address">Please enter your address</string>
+    <string name="congratulation_register_success" type="id">Congratulation register success</string>
+    <string name="faild_to_signin" type="id">Faild to signin</string>
+    <string name="verify">Verify</string>
+    <string name="number_empty_or_not_correct">Empty field or not correct number</string>
+    <string name="code_empty_or_not_correct">Empty field or not correct code</string>
+    <string name="signOut">Sign out</string>
+    <string name="code_sent">Code sent</string>
+    <string name="popular_categories">Popular categories</string>
+    <string name="best_deals">Best Deals</string>
+    <string name="popular">Popular</string>
+    <string name="home">Home</string>
+    <string name="menu">Menu</string>
+    <string name="slideShow">Slide Show</string>
+    <string name="tools">Tools</string>
+    <string name="foodLists">Food Lists</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        icon="@drawable/globe_icon"
+        id="@+id/navigation_home"
+        title="Home" />
+
+    <tab
+        icon="@drawable/globe_icon"
+        id="@+id/navigation_menu"
+        title="Menu" />
+
+    <tab
+        icon="@drawable/globe_icon"
+        id="@+id/navigation_tools"
+        title="Tools" />
+</tabs>

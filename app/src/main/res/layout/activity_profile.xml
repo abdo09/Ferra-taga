@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background1"
+        tools:context=".Activity.Profile">
+
+
+
+            <include
+                android:id="@+id/toolbar_layout"
+                layout="@layout/toolbar"
+                >
+            </include>
+
+
+        <TextView
+            android:id="@+id/tv_press_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/press_the_card_to_get_qr_code"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.wajahatkarim3.easyflipview.EasyFlipView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/tv_press_card"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:autoFlipBack="false"
+            app:flipDuration="400"
+            app:flipEnabled="true"
+            app:flipFrom="right"
+            app:flipOnTouch="true"
+            app:flipType="horizontal">
+
+            <include
+                android:id="@+id/back_card_layout"
+                layout="@layout/card_layout_back"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_centerInParent="true" />
+
+            <include
+                android:id="@+id/front_card_layout"
+                layout="@layout/card_layout_front"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true" />
+
+
+        </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+
+    </RelativeLayout>
+
+</layout>

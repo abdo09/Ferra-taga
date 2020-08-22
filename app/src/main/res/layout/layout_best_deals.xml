@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background1">
+
+        <ImageView
+            android:id="@+id/img_best_deal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/tv_best_deal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/brandon_medium"
+            android:gravity="center"
+            android:text="@string/popular"
+            android:textColor="@color/background1"
+            android:textSize="22sp"
+            tools:ignore="ObsoleteLayoutParam" />
+
+    </FrameLayout>
+</layout>

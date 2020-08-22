@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/cardboarder">
+
+        <com.cooltechworks.views.ScratchImageView
+            android:background="@android:color/white"
+            android:id="@+id/QR_code_imageView"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/behance" />
+
+    </RelativeLayout>
+</layout>

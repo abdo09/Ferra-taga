@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'realm-android'
+
+android {
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.ferra.taga"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true  //ADD THIS LINE
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    //library
+    implementation 'org.aviran.cookiebar2:cookiebar2:1.1.2'            //toast message
+    implementation 'de.hdodenhof:circleimageview:3.1.0'          // circle image view
+    implementation 'com.mikhaellopez:circularimageview:4.0.2'// CircularImageView
+    implementation 'com.github.bumptech.glide:glide:3.7.0'             // image loader
+    implementation 'com.github.cooltechworks:ScratchView:v1.1' //Scratch Image
+    implementation 'com.github.d-max:spots-dialog:1.1@aar' //progress dialog
+    implementation "com.squareup.picasso:picasso:2.71828" //Picasso
+    implementation 'com.wajahatkarim3.EasyFlipView:EasyFlipView:2.1.2' //Flip view pager
+    implementation 'org.greenrobot:eventbus:3.2.0' //Event bus
+    implementation 'com.asksira.android:loopingviewpager:1.1.4'
+    implementation 'com.github.andremion:counterfab:1.2.2'
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
+    implementation 'com.google.guava:guava:27.0.1-android'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    //RxJava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.9'
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.6.1'
+    //firebase
+    implementation 'com.google.firebase:firebase-database:19.2.1'
+    implementation 'com.google.firebase:firebase-analytics:17.3.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.0'
+    implementation 'com.firebaseui:firebase-ui-auth:6.2.0'
+    implementation 'com.google.firebase:firebase-core:17.3.0'
+    // QR CODE
+    implementation 'com.google.zxing:core:3.2.1'
+    implementation 'com.journeyapps:zxing-android-embedded:3.2.0@aar'
+    // fragments navigation
+    implementation 'com.roughike:bottom-bar:2.3.1'
+    implementation 'me.yokeyword:fragmentationx:1.0.1'
+    implementation 'com.firebaseui:firebase-ui-database:6.2.1'
+}

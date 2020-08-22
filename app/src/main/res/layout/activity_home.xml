@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background1"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/app_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_alignParentTop="true"
+                android:background="@color/backgroundColor"
+                app:elevation="0dp">
+
+                <include
+                    android:id="@+id/toolbar_layout"
+                    layout="@layout/toolbar"
+                    android:background="@color/backgroundColor" >
+                </include>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/main_content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/app_bar_layout"
+                />
+
+        </RelativeLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+            style="Widget.MaterialComponents.BottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".HomeActivity">
+
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottom_app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:backgroundTint="@color/backgroundColor"
+                app:contentInsetStart="-100dp"
+                app:fabAlignmentMode="center"
+                app:rippleColor="@color/transparentColor">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <com.roughike.bottombar.BottomBar
+                        android:id="@+id/bottomBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@android:color/transparent"
+                        android:clipToPadding="false"
+                        app:bb_activeTabColor="@android:color/white"
+                        app:bb_badgesHideWhenActive="false"
+                        app:bb_inActiveTabColor="@color/textGrayColor"
+                        app:bb_longPressHintsEnabled="false"
+                        app:bb_showShadow="false"
+                        app:bb_tabXmlResource="@xml/user_bottombar"
+                        app:bb_titleTextAppearance="@style/bottom_bar_text_appearance_small" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/qr_code_icon"
+                app:backgroundTint="@color/buttonBackgroundColor"
+                app:fabSize="normal"
+                app:layout_anchor="@+id/bottom_app_bar"
+                app:rippleColor="#00000000" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+</layout>
